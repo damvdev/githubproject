@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 namespace Activities
 {
 	public class Program
@@ -18,6 +18,7 @@ namespace Activities
 			if (n == 0) return 0;
 			return n + SumaRec(n - 1);
 		}
+
 		public static int PowIt(int n, int m)
 		{
 			int num = 1;
@@ -32,6 +33,7 @@ namespace Activities
 			if (m == 0) return 1;
 			return n * PowRec(n, m - 1);
 		}
+
 		public static int FactorialIt(int n)
 		{
 			int num = 1;
@@ -46,6 +48,7 @@ namespace Activities
 			if (n == 0) return 1;
 			return n * FactorialRec(n - 1);
 		}
+
 		public static void Main()
 		{
 			//Exemples suma iterativa i recursiva
