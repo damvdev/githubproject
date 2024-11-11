@@ -32,6 +32,20 @@ namespace Activities
 			if (m == 0) return 1;
 			return n * PowRec(n, m - 1);
 		}
+		public static int FactorialIt(int n)
+		{
+			int num = 1;
+			for (int i = 1; i <= n; i++)
+			{
+				num *= i;
+			}
+			return num;
+		}
+		public static int FactorialRec(int n)
+		{
+			if (n == 0) return 1;
+			return n * FactorialRec(n - 1);
+		}
 		public static void Main()
 		{
 			//Exemples suma iterativa i recursiva
@@ -40,6 +54,9 @@ namespace Activities
 			//Exemples potencia iterativa i recursiva
 			Console.WriteLine(PowIt(2, 3));
 			Console.WriteLine(PowRec(2, 3));
+			//Exemples factorial iteratiu i recursiu
+			Console.WriteLine(FactorialIt(4));
+			Console.WriteLine(FactorialRec(4));
 		}
 	}
 }
